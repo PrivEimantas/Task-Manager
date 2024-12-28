@@ -1,0 +1,71 @@
+.grid {
+    display: flex; /* Enables flexbox, aligning items in a row by default */
+    
+    padding:0;
+    margin:0;
+    align-items: center;
+    
+}
+
+.todo-container {
+    width: 100vw;
+    height: 30rem;
+    background-color: rgb(35,39,52);
+    color: white;
+    font-family: monospace;
+    
+    font-size: 1.5rem; /* Font size relative to the base font size */
+    border: 1px solid white;
+    
+}
+
+.doing-container{
+    width: 40rem;
+    height: 30rem;
+    background-color: #4caf50;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Font size relative to the */
+    border: 0.5px solid white;
+}
+
+.small {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* White text color */
+    font-size: 1rem; /* Responsive text size */
+    padding: 1rem 2rem; /* Vertical and horizontal padding */
+    background-color: rgb(35,39,52);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for better visibility */
+    text-align: left; /* Center text inside the box */
+    width: 100%; /* Take full width of parent container */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    border: 0.5px solid white;
+    height: 6vh;
+    padding-left: 3rem;
+}
+
+.task-info {
+    
+    background-color: rgb(35,39,52);
+    
+    margin-right: 5rem;
+
+}
+
+.task-date {
+    margin-left: auto;
+    background-color: rgb(35,39,52);
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 633px) {
+    .todo-container {
+        width: 100%;
+    }
+  }

@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  scroll-behavior: smooth;
+}
+
+.gradient_bg{
+  
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 7% 26%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 98%);
+    
+}
+
+.gradient_text{
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section_padding{
+  padding:4rem 6rem;
+}
+
+.section_margin{
+  margin:4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+body {
+ /* background: #373737; */
+ /*background-image: url(assets/mountains.jpg);*/
+ background-color: black; 
+ width: 100%;
+ background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width:700px){ /* For tablets*/
+  .section_padding{
+    padding:4rem;
+  }
+  .section_margin{
+    margin:4rem;
+  }
+}
+
+@media screen and (max-width:550px){ /* For phones */
+  .section_padding{
+    padding:4rem 2rem;
+  }
+  .section_margin{
+    margin:4rem 2rem;
+  }
+}

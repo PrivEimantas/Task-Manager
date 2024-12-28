@@ -1,0 +1,6 @@
+https://www.reddit.com/r/devops/comments/14hl4ha/projects_for_beginners_in_devops/
+(Do step 6, fix 10 maybe, step 12, add OBSERVABILITY)
+
+- Make website have more content, atm its only a landing page.
+- Get a domain name and have it actually accessible by internet.
+- Some embedded project showcase

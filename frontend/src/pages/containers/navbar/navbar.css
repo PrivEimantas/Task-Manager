@@ -1,0 +1,123 @@
+.navbar-button-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+
+    cursor: pointer;
+    text-decoration: underline;
+    
+
+}
+
+.navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: 'flex-start';
+    align-items: center;
+
+}
+
+.navbar-links_logo{
+    margin-right: 2rem;
+
+}
+
+.navbar-links_container a,p {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+.navbar-links_container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-sign button,
+.navbar-menu_container button {
+    background: #FF4820;
+    border-radius: 3px;
+    color:#ffff;
+    font-family: var(--font-family);
+    padding:0.5rem 1rem; /* for top and bottom, left and right instead of set in stone values */
+    left:1153px;
+    top:55px;
+    font-weight: 500;
+    border: 0;
+    outline: none;
+}
+

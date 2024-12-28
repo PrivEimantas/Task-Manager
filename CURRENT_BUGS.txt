@@ -1,0 +1,5 @@
+LIST OF BUGS :
+
+
+- Ticking 'done' on a task and then reloading the page by signing in again causes it to not be ticked again
+- No remove task

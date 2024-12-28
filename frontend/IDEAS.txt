@@ -1,0 +1,3 @@
+-Allows user to login using mongoDB (database)
+-Each user can have a unstarted, in progress or completed action
+-Each action will have a date (when due by) and the note part which they can write to

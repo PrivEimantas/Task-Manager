@@ -1,0 +1,27 @@
+
+
+services:
+  
+  api:
+    build:
+      context: ./backend/taskmanAPI
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend/taskmanAPI:/app
+      - media_volume:/app/media
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+  
+volumes:
+  media_volume:

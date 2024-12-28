@@ -1,0 +1,168 @@
+
+.header_content h1{
+  background-color: red;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.header_section_padding{
+    padding:4rem 7rem;
+    
+}
+
+
+.header_content p{
+    position: relative;
+    right:15px;
+    font-family: var(--font-family);
+    font-size: 19px;
+    line-height: 27px;
+    color: #81AFDD;
+    margin-top:1.5rem ;
+}
+
+.header {
+  display: flex;
+}
+
+.header_content {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+
+
+}
+
+
+
+.header_content_input{
+  width: 60%;
+  margin:3rem 0 1rem;
+  display: flex; /* default is row */
+
+  
+}
+
+.header_content_input input{
+  flex: 2;
+  width: 100%;
+  min-height: 50px; /* makes input box bigger from top */
+  background: #052D56;
+  border-radius: 5px 0 0 5px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+  border: 2px solid #052D56;
+  padding: 0 1rem;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header_content_input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  cursor: pointer;
+
+
+  padding: 0 1rem;
+  background: #FF4820;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  line-height: 27px;
+  outline: none;
+  border:none; /* gets rid of outline and border outside */
+  color: #fff;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header_image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_image img{
+  width: 40%;
+  height: 40%;
+  position: relative;
+  left: 500px;
+  bottom: 400px;
+}
+
+@media screen and (max-width:1050px) { /* for devices with smaller screens */
+  .header{
+    flex-direction: column;
+  }
+   
+  .header_content{
+    margin: 0 0 3rem;
+  }
+
+
+
+}
+
+@media screen and (max-width:650px) { /* for devices with smaller screens */
+  .header h1{
+    font-size: 48px;
+    line-height: 60px;
+  }
+   
+  .header p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header_content_input input,
+  .header_content_input button{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+}
+
+
+@media screen and (max-width:490px) { /* for devices with smaller screens */
+  .header h1{
+    font-size: 36px;
+    line-height: 48px;
+  }
+   
+  .header p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .header_content_input input,
+  .header_content_input button{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+}
